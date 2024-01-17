@@ -36,14 +36,121 @@
             <div class="topnav">
                <a class="active" href="#home">Homepage</a>
                <a href="aboutme.html">About Me</a>
-               <a href="myawards.html">My Awards</a>
-               <a href="MyCollegeCourse.html">My College Course</a>
-               <a href="MySkills.html">My Skills</a>
-               <a href="MyContributionstoSociety.html">My Contributions to Society</a>
-               <a href="my qualifications.html">My Qualifications</a>
-               <a href="MyHobbies.html">My Hobbies</a>
-               <a href="MyIdealCareer.html">My Ideal Career</a>
-               <a href="MyWorkExperience.html">My Work Experience</a>
             <div>
-                <div style="padding-left:16px">    
-               
+                <div style="padding-left:16px">
+
+                    <style>
+                        .footer {
+                          position: fixed;
+                          left: 0;
+                          bottom: 0;
+                          width: 100%;
+                          background-color: #808080;
+                          color: white;
+                          text-align: center;
+                        }
+                        </style>
+                        
+                        <div class="footer">
+                          <p>Footer</p>
+                        </div>
+                        <!DOCTYPE html>
+                        <html>
+                        <head>
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                        <style>
+                        body {
+                          font-family: 'Lato', sans-serif;
+                        }
+                        
+                        .overlay {
+                          height: 100%;
+                          width: 0;
+                          position: fixed;
+                          z-index: 1;
+                          top: 0;
+                          left: 0;
+                          background-color: rgb(0,0,0);
+                          background-color: rgba(0,0,0, 0.9);
+                          overflow-x: hidden;
+                          transition: 0.5s;
+                        }
+                        
+                        .overlay-content {
+                          position: relative;
+                          top: 25%;
+                          width: 100%;
+                          text-align: center;
+                          margin-top: 30px;
+                        }
+                        
+                        .overlay a {
+                          padding: 8px;
+                          text-decoration: none;
+                          font-size: 36px;
+                          color: #818181;
+                          display: block;
+                          transition: 0.3s;
+                        }
+                        
+                        .overlay a:hover, .overlay a:focus {
+                          color: #fafafa;
+                        }
+                        
+                        .overlay .closebtn {
+                          position: absolute;
+                          top: 20px;
+                          right: 45px;
+                          font-size: 60px;
+                        }
+                        
+                        @media screen and (max-height: 450px) {
+                          .overlay a {font-size: 20px}
+                          .overlay .closebtn {
+                          font-size: 40px;
+                          top: 15px;
+                          right: 35px;
+                          }
+                        }
+                        </style>
+                        </head>
+                        <body>
+                        
+                        <div id="myNav" class="overlay">
+                          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                          <div class="overlay-content">
+                            <a href="#"><myawards class="html"></myawards></a>
+
+                            <a href="#">my college course</a>
+
+                            <a href="#">my hobbies</a>
+
+                            <a href="#">my qualifications</a>
+
+                            <a href="#">my ideal career</a>
+
+                            <a href="#">my skills</a>
+
+                            <a href="#">my work experience</a>
+                            
+                            <a href="#">my contributions to society</a>
+                            <a href="#"></a>
+                    
+                          </div>
+                        </div>
+                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More</span>
+                        
+                        <script>
+                        function openNav() {
+                          document.getElementById("myNav").style.width = "100%";
+                        }
+                        
+                        function closeNav() {
+                          document.getElementById("myNav").style.width = "0%";
+                        }
+                        </script>
+                             
+                        </body>
+                        </html>
+                        
+
