@@ -1,2 +1,161 @@
 <!DOCTYPE html>
-<h1>My Work Experience</h1>
+<body>
+  <h1 align="center"> </b>My Work Experience</h1>
+</body>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #04AA6D;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #00f874;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#AboutMe">About Me</a>
+  <a href="#contact">Contact Me</a>
+
+</div>
+
+<div style="padding-left:16px">
+</div>
+
+</body>
+</html>
+<style>
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #04AA6D;
+      color: white;
+      
+    }
+    </style>
+    
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+    <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: (rgb(0, 255, 64));
+  background-color: rgb(0, 255, 34);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#MyAwards">About</a>
+    <a href="#MyCollegeCourse">My College Course</a>
+    <a href="#MySkills">My Skills</a>
+    <a href="#MyWorkExperience">My Work Experience</a>
+    <a href="#MyHobbies">My Hobbies</a>
+    <a href="#ContactMe">Contact Me</a>
+    <a href="#MyIdeal Career">My Ideal Career</a>
+    <a href="#MyQualifications">My Qualifications</a>
+    <a href="#MYContributionstoSociety">My Contributions to Society</a>
+
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More</span>
+
+<script>
+  function opennav() {
+    document.getElementById("myNav").style.height = "100%" ;
+  }
+
+  function openNav() {
+    document.getElementById("myNav").style.height = "0%" ;
+  }
+</script>
+
+</body>
+</html>
