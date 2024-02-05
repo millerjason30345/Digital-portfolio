@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <body>
+  
   <h1 align="center"> </b>Hello and Welcome to my page</h1>
 </body>
 <!DOCTYPE html>
@@ -40,9 +41,28 @@ body {
 <body>
 
 <div class="topnav">
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+    </script>
   <a class="active" href="#home">Home</a>
-  <a href="#AboutMe">About Me</a>
-  <a href="#contact">Contact Me</a>
+  <a href="AboutMe">About Me</a>
+  <a href="contact">Contact Me</a>
+  <a href="MyCollegeCourse">My College Course</a>
+  <a href="MySkills">My Skills</a>
+   <a href="MyWorkExperience">My Work Experience</a>
+  <a href="MyHobbies">My Hobbies</a>
+  <a href="MyIdeal Career">My Ideal Career</a>
+  <a href="MyQualifications">My Qualifications</a>
+   <a href="MYContributionstoSociety">My Contributions to Society</a>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More</span>
+
 
 </div>
 
@@ -146,17 +166,6 @@ body {
   </div>
 </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More</span>
 
-<script>
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
-</script>
-     
 </body>
 </html>
