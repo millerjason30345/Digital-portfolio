@@ -1,65 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>About Me</title>
-</head>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      text-align: center; /* Center align all text */
+    }
 
-<body>
-  <h1 align="center">Contact Me</h1>
-</body>
-<!DOCTYPE html>
-<body>
-</body>
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    /* Styles for the top navigation bar */
+    .topnav {
+      overflow: hidden;
+      background-color: #04AA6D;
+    }
 
-.topnav {
-  overflow: hidden;
-  background-color: #04AA6D;
-}
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+    .topnav a:hover {
+      background-color: #00f874;
+      color: black;
+    }
 
-.topnav a:hover {
-  background-color: #00f874;
-  color: black;
-}
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
 
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-</style>
-</head>
-<body>
-
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#AboutMe">About Me</a>
-  <a href="#contact">Contact Me</a>
-
-</div>
-
-<div style="padding-left:16px">
-</div>
-
-</body>
-</html>
-<style>
+    /* Styling for the footer */
     .footer {
       position: fixed;
       left: 0;
@@ -67,107 +42,121 @@ body {
       width: 100%;
       background-color: #04AA6D;
       color: white;
-      
+      text-align: center;
     }
-    </style>
-    
-    <div class="footer">
-        <p>Footer</p>
-    </div>
-    <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: 'Lato', sans-serif;
-}
 
-.overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: (rgb(0, 255, 64));
-  background-color: rgb(0, 255, 8);
-  overflow-y: hidden;
-  transition: 0.5s;
-}
+    /* Styling for the overlay navigation */
+    .overlay {
+      height: 0%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 255, 8);
+      overflow-y: hidden;
+      transition: 0.5s;
+    }
 
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
 
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #000000;
-  display: block;
-  transition: 0.3s;
-}
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #000000;
+      display: block;
+      transition: 0.3s;
+    }
 
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
+    .overlay a:hover,
+    .overlay a:focus {
+      color: #f1f1f1;
+    }
 
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
 
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-}
-</style>
+    @media screen and (max-height: 450px) {
+      .overlay {
+        overflow-y: auto;
+      }
+
+      .overlay a {
+        font-size: 20px
+      }
+
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#homepage.html">My Homepage</a>
-    <a href="#MyAwards">About</a>
-    <a href="#MyCollegeCourse">My College Course</a>
-    <a href="#MySkills">My Skills</a>
-    <a href="#MyWorkExperience">My Work Experience</a>
-    <a href="#MyHobbies">My Hobbies</a>
-    <a href="#ContactMe">Contact Me</a>
-    <a href="#MyIdeal Career">My Ideal Career</a>
-    <a href="#MyQualifications">My Qualifications</a>
-    <a href="#MYContributionstoSociety">My Contributions to Society</a>
-
+  <!-- Top Navigation Bar -->
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#AboutMe">About Me</a>
+    <a href="#contact">Contact Me</a>
   </div>
-</div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More</span>
+  <!-- Overlay Navigation -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#homepage.html">My Homepage</a>
+      <a href="#MyAwards">About</a>
+      <a href="#MyCollegeCourse">My College Course</a>
+      <a href="#MySkills">My Skills</a>
+      <a href="#MyWorkExperience">My Work Experience</a>
+      <a href="#MyHobbies">My Hobbies</a>
+      <a href="#ContactMe">Contact Me</a>
+      <a href="#MyIdeal Career">My Ideal Career</a>
+      <a href="#MyQualifications">My Qualifications</a>
+      <a href="#MYContributionstoSociety">My Contributions to Society</a>
+    </div>
+  </div>
 
-<script>
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
+  <!-- Button to Open Overlay Navigation -->
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More</span>
 
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
-</script>
-     
+  <!-- Content -->
+  <p>Links to my socials</p>
+  <div>
+    <a href="https://www.linkedin.com/in/jason-miller-298482294?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOUN5HmIiQwy8XC%2B5Cw94vQ%3D%3D" class="fa fa-linkedin">LinkedIn Account</a>
+  </div>
+
+  <!-- Page Footer -->
+  <div class="footer">
+    <p>Footer</p>
+  </div>
+
+  <!-- JavaScript for Opening/Closing Overlay Navigation -->
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+
 </body>
-</html>
 
 </html>
 <!DOCTYPE html>
@@ -178,72 +167,172 @@ function closeNav() {
   <style>
     body {
       font-family: "Arial", sans-serif;
+      text-align: center; /* Center align all text */
+    }
+
+    /* Styles for the top navigation bar */
+    .topnav {
+      overflow: hidden;
+      background-color: #04AA6D;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #00f874;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    /* Styling for the footer */
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #04AA6D;
+      color: white;
+      text-align: center;
+    }
+
+    /* Styling for the overlay navigation */
+    .overlay {
+      height: 0%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 255, 8);
+      overflow-y: hidden;
+      transition: 0.5s;
+    }
+
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #000000;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+      color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .overlay {
+        overflow-y: auto;
+      }
+
+      .overlay a {
+        font-size: 20px
+      }
+
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+
+    /* Styling for the LinkedIn button */
+    .linkedin-btn {
+      padding: 10px 20px;
+      background-color: #007bb5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .linkedin-btn:hover {
+      background-color: #005f84;
     }
   </style>
 </head>
 
-<html>
-<head>
-<style>
-h1 {text-align: center;}
-p {text-align: center;}
-div {text-align: center;}
-</style>
-</head>
 <body>
 
-<p>links to my socials</p>
-</body>
-</html>
+  <!-- Top Navigation Bar -->
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#AboutMe">About Me</a>
+    <a href="#contact">Contact Me</a>
+  </div>
 
+  <!-- Overlay Navigation -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#homepage.html">My Homepage</a>
+      <a href="#MyAwards">About</a>
+      <a href="#MyCollegeCourse">My College Course</a>
+      <a href="#MySkills">My Skills</a>
+      <a href="#MyWorkExperience">My Work Experience</a>
+      <a href="#MyHobbies">My Hobbies</a>
+      <a href="#ContactMe">Contact Me</a>
+      <a href="#MyIdeal Career">My Ideal Career</a>
+      <a href="#MyQualifications">My Qualifications</a>
+      <a href="#MYContributionstoSociety">My Contributions to Society</a>
+    </div>
+  </div>
 
+  <!-- Button to Open Overlay Navigation -->
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More</span>
 
-<div style="padding-left:16px"></div>
+  <!-- Content -->
+  <p>Links to my socials</p>
+  <div>
+    <button class="linkedin-btn" onclick="window.open('https://www.linkedin.com/in/jason-miller-298482294?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOUN5HmIiQwy8XC%2B5Cw94vQ%3D%3D')">LinkedIn Account</button>
+  </div>
 
-<!--Page Footer-->
-<div class="footer">
-<p>Footer</p>
-</div>
+  <!-- Page Footer -->
+  <div class="footer">
+    <p>Footer</p>
+  </div>
 
-<span 
-function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-}
-<script
-
-    <head>
-        <div>
-                <a href="https://www.linkedin.com/in/jason-miller-298482294?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOUN5HmIiQwy8XC%2B5Cw94vQ%3D%3D">LinkedIn Account </a>
-        </div>
-  <style>
-        .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-decoration: none;
-    text-decoration: none;
-    margin: 5px 2px;
-}
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-linkedin {
-    background: #007bb5;
-    color: blue
+  <!-- JavaScript for Opening/Closing Overlay Navigation -->
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
     }
-   .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-  </style> 
-  <!--End of Styling-->  
-  </html>
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+
+</body>
+
+</html>
