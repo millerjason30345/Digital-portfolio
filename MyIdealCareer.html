@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<h1> My ideal career</h1>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +33,7 @@
         }
 
         .overlay {
-            height: 0%;
+            height: 0;
             width: 100%;
             position: fixed;
             z-index: 1;
@@ -93,29 +91,39 @@
         }
 
         .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
             background-color: #04AA6D;
             color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 
 <div class="topnav">
-    <a class="active" href="#home">Home</a> <!--Directs Home-->
-    <a href="aboutme.html">About Me</a> <!--Directs to about me page-->
-    <a href="contactme.html">Contact Me</a> <!--Directs to contact me page-->
-    <a href="MyCollegeCourse.html">My College Course</a> <!--Driects to college course Page-->
-    <a href="MySkills.html">My Skills</a> <!--Directs to my skills page-->
-    <a href="MyWorkExperience.html">Work Experience</a> <!--directs to Work experience page-->
-    <a href="MyIdealCareer.html">My Ideal Career</a> <!--directs to ideal carrer page-->
-    <a href="MyQualifications.html">My Qualifications</a> <!--Directs to page detailing Qualifciations-->
-    <a href="MyContributionstoSociety.html">My Contributions to Society</a> <!--details society contributions-->
+    <a class="active" href="#home">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="contactme.html">Contact Me</a>
+    <a href="MyCollegeCourse.html">My College Course</a>
+    <a href="MySkills.html">My Skills</a>
+    <a href="MyWorkExperience.html">Work Experience</a>
+    <a href="MyIdealCareer.html">My Ideal Career</a>
+    <a href="MyQualifications.html">My Qualifications</a>
+    <a href="MyContributionstoSociety.html">My Contributions to Society</a>
 
-<!--Controls opening and closing of the hamburger Menu-->
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More</span>
 </div>
 
@@ -134,7 +142,27 @@
     </div>
 </div>
 
-<div style="padding-left:16px"></div>
+<p>My ideal career would be one in the engineering sector, specifically telecommunications and computer networks. Other engineering roles I have considered pursuing are in the electrical industry.</p>
+<p>More information can be found on my CV.</p>
+
+<div class="gallery">
+    <div>
+        <img src="assets/Images/tower-rigger.jpg" alt="Tower Rigger">
+        <p>Similar to a network engineer, Tower Riggers are contracted by a Mobile Operating Company to install, maintain and replace Radio Antennas, its cabling and other equipment, as well as build the mast itself.</p>
+    </div>
+
+    <div>
+        <h2>Telecommunications Engineer</h2>
+        <img src="assets/Images/telecommunicationsEngineer.jpeg" alt="Telecommunications Engineer">
+        <p>You may see these engineers working in street Fibre Cabinets around the country, the job involves fixing outages/damage and routine maintenance/replacement of equipment.</p>
+    </div>
+
+    <div>
+        <h2>Telecommunications Mast</h2>
+        <img src="assets/Images/telecommunicationMast.jpeg" alt="Telecommunications Mast">
+        <p>A typical example of a mast featuring Cellular Antenna and equipment such as RRUs (Remote Radio Heads), Fibre Cabling, and Microwave dishes used for network backhaul linking.</p>
+    </div>
+</div>
 
 <div class="footer">
     <p>Footer</p>
@@ -151,66 +179,3 @@
 </script>
 </body>
 </html>
-
-<p>My ideal career would be one in the engineering sector, specifically telecommunications and computer networks, other engineering roles i have considered persuing are in the electrical industry.</p>
-<p>More information can be found on my CV.</p>
-<style>
-    * {
-        box-sizing: border-box; 
-    }
-.row { 
-    display: flex;
-}
-.collumn {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-}.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-@media screen and (max-width: 500px) {
-    .collumn {
-        width:100%;
-    }
-}
-</style>
-</head>
-<html>
-  <div class="clearfix"></div>
-  <div class="responsive">
-    <div class="gallery"></div>
-
-  
-
-
-      <div>
-        <!-- I have changed this image to one that doesnt include watermarks-->
-        <!--Description and image for rigger and text about ideal carrer-->
-<img src="assets/Images /tower-rigger.jpg">
-      </div>
-      <p>Similar to a network engineer, Tower Riggers are contracted by a Mobile Operating Company to install, maintain and replace Radio Antennas, its cabling and other equiptment, as well as build the mast itself.</P> 
-        
-    
-    
-      <div>
-        <!--Description and image for telelcomunications engineer-->
-<h1>Telecomminications engineer</h1>
-        <img src="assets/Images/telecommunicationsEnginner.jpeg">
-        </div>
-     <p>You may see these engineers working in street Fibre Cabinets around the country, the job involves fixing outages/
-     damage and routine maintanance/replacement of equiptment</p>
-        
-        <div>
-            <!--Description and picture for the Mast-->
-            <h1>Telecommunications Mast</h1>
-            <img src="assets/Images/telecommunicationMast.jpeg">
-        </div>
-     <p>A typical example of a mast featuring Cellular Antenna and equiptment such as RRUs (Remote Radio Heads) Fibre Cabling and Microwave dishes used for network backhaul linking</p>
-     <div>
-        <!--Description and picture for the -->
-        <img src="assets/Images/electrician.png">
-        <p>The role of an electrician is to install, maintain and repair and preform jobs such as wiring cables to  electricity, i have looked at roles with SSEand other companies</p>
-     </div>
-    
