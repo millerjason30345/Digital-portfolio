@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<body>
-  <h1 align="center"> </b>My Skills</h1>
-</body>
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Skills</title>
 <style>
 body {
   margin: 0;
@@ -35,55 +33,15 @@ body {
   background-color: #04AA6D;
   color: white;
 }
-</style>
-</head>
-<body>
-
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#AboutMe">About Me</a>
-  <a href="#contact">Contact Me</a>
-
-</div>
-
-<div style="padding-left:16px">
-</div>
-
-</body>
-</html>
-<style>
-    .footer {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: #04AA6D;
-      color: white;
-      
-    }
-    </style>
-    
-    <div class="footer">
-        <p>Footer</p>
-    </div>
-    <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: 'Lato', sans-serif;
-}
 
 .overlay {
-  height: 0%;
+  height: 0;
   width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: (rgb(0, 76, 255));
-  background-color: rgb(0, 102, 255);
+  background-color: #00f874;
   overflow-y: hidden;
   transition: 0.5s;
 }
@@ -117,17 +75,34 @@ body {
 }
 
 @media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
   .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
 </style>
 </head>
 <body>
+
+<h1 align="center">My Skills</h1>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#AboutMe">About Me</a>
+  <a href="#contact">Contact Me</a>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More</span>
+</div>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
 
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -137,14 +112,11 @@ body {
     <a href="#MySkills">My Skills</a>
     <a href="#MyWorkExperience">My Work Experience</a>
     <a href="#ContactMe">Contact Me</a>
-    <a href="#MyIdeal Career">My Ideal Career</a>
+    <a href="#MyIdealCareer">My Ideal Career</a>
     <a href="#MyQualifications">My Qualifications</a>
-    <a href="#MYContributionstoSociety">My Contributions to Society</a>
-
+    <a href="#MyContributions">My Contributions to Society</a>
   </div>
 </div>
-
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More</span>
 
 <script>
 function openNav() {
@@ -155,17 +127,5 @@ function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
 </script>
-     
 </body>
 </html>
-<ul><b>A breif overview of my skills</b>
-    <li>Hardworking</li>
-    <li>Determined</li>
-    <li>Practical</li>
-    <li>Freindly</li>
-    <li>Organised</li>
-    
-    <p>Other skills can be found listed on my CV found below - last updated October 2023</p>
-    <a href="//Users/jasonmiller/Downloads/Jason Miller CV.docx" download>
-        <img src="/Users/jasonmiller/Downloads/Jason Miller CV.docx" alt="W3Schools">
-      </a>
