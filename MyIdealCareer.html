@@ -6,15 +6,18 @@
         body {
             margin: 0;
             font-family: 'Lato', sans-serif;
+            color: #333; /* Improved readability */
         }
 
+        /* Navigation bar styles */
         .topnav {
             overflow: hidden;
             background-color: #4CA772;
+            display: flex;
+            justify-content: center;
         }
 
         .topnav a {
-            float: left;
             color: #f2f2f2;
             text-align: center;
             padding: 14px 16px;
@@ -22,16 +25,13 @@
             font-size: 17px;
         }
 
-        .topnav a:hover {
+        .topnav a:hover,
+        .topnav a.active {
             background-color: #00f874;
             color: black;
         }
 
-        .topnav a.active {
-            background-color: #00f874;
-            color: white;
-        }
-
+        /* Overlay menu styles */
         .overlay {
             height: 0;
             width: 100%;
@@ -55,13 +55,14 @@
         .overlay a {
             padding: 8px;
             text-decoration: none;
-            font-size: 36px;
+            font-size: 20px; /* Reduced font size for better readability */
             color: #000000;
             display: block;
             transition: 0.3s;
         }
 
-        .overlay a:hover, .overlay a:focus {
+        .overlay a:hover,
+        .overlay a:focus {
             color: #f1f1f1;
         }
 
@@ -69,27 +70,12 @@
             position: absolute;
             top: 20px;
             right: 45px;
-            font-size: 60px;
+            font-size: 40px; /* Reduced font size for better appearance */
             color: #f1f1f1;
             cursor: pointer;
         }
 
-        @media screen and (max-height: 450px) {
-            .overlay {
-                overflow-y: auto;
-            }
-
-            .overlay a {
-                font-size: 20px;
-            }
-
-            .overlay .closebtn {
-                font-size: 40px;
-                top: 15px;
-                right: 35px;
-            }
-        }
-
+        /* Footer styles */
         .footer {
             background-color: #04AA6D;
             color: white;
@@ -97,17 +83,21 @@
             text-align: center;
         }
         
+        /* Gallery styles */
         .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            margin-top: 20px;
         }
         
         .gallery img {
-            width: 100%;
-            max-width: 300px;
+            max-width: 100%; /* Ensures images don't exceed their container */
             margin-bottom: 20px;
+        }
+        
+        /* Paragraph styles */
+        p {
+            margin-bottom: 20px; /* Adds some space below paragraphs for better readability */
         }
     </style>
 </head>
@@ -123,7 +113,6 @@
     <a href="MyIdealCareer.html">My Ideal Career</a>
     <a href="MyQualifications.html">My Qualifications</a>
     <a href="MyContributionstoSociety.html">My Contributions to Society</a>
-
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More</span>
 </div>
 
@@ -142,33 +131,36 @@
     </div>
 </div>
 
-<p>My ideal career would be one in the engineering sector, specifically telecommunications and computer networks. Other engineering roles I have considered pursuing are in the electrical industry.</p>
-<p>More information can be found on my CV.</p>
+<!-- Main content -->
+<div>
+    <p>My ideal career would be one in the engineering sector, specifically telecommunications and computer networks. Other engineering roles I have considered pursuing are in the electrical industry.</p>
+    <p>More information can be found on my CV.</p>
+</div>
 
 <div class="gallery">
     <div>
         <h1>Mast Rigging</h1>
         <img src="assets/Images/tower-rigger.jpg" alt="Tower Rigger">
-        <p>Similar to a network engineer, Tower Riggers are contracted by a Mobile Operating Company to install, test, maintain and replace Radio Antennas, its cabling and other equipment, as well as build the mast itself.</p>
+        <p>Similar to a network engineer, Tower Riggers are contracted by a mobile operating company to install, test, maintain, and replace radio antennas, its cabling, and other equipment, as well as build the mast itself.</p>
     </div>
 
     <div>
         <h2>Telecommunications Engineer</h2>
         <img src="assets/Images/telecommunicationsEngineer.jpeg" alt="Telecommunications Engineer">
-        <p>You may see these engineers working in street Fibre Cabinets around the country, the job involves fixing outages/damage and routine maintenance/replacement of equipment.</p>
+        <p>You may see these engineers working in street fiber cabinets around the country; the job involves fixing outages/damage and routine maintenance/replacement of equipment.</p>
     </div>
 
     <div>
         <h2>Telecommunications Mast</h2>
         <img src="assets/Images/telecommunicationMast.jpeg" alt="Telecommunications Mast">
-        <p>A typical example of a mast featuring Cellular Antenna and equipment such as RRUs (Remote Radio Heads), Fibre Cabling, and Microwave dishes used for network backhaul linking.</p>
+        <p>A typical example of a mast featuring cellular antenna and equipment such as RRUs (Remote Radio Heads), fiber cabling, and microwave dishes used for network backhaul linking.</p>
     </div>
 </div>
 
 <div>
     <h2>Electrician</h2>
-    <img src="assets/Images/Electrician.png" alt="Electrician" style="width: 400px; height: auto;">
-    <p>I have also considered a career as an Electrician, this hands on job i simmilarily themed to the others listed above as it invloves installing, replacing and testing cabling and its equptment, in a myriad of locations. it has led me to researching and speaking with local self employed electricians to well known national companies such as SSE</p>
+    <img src="assets/Images/Electrician.png" alt="Electrician" style="max-width: 100%; height: auto;">
+    <p>I have also considered a career as an electrician. This hands-on job is similarly themed to the others listed above as it involves installing, replacing, and testing cabling and its equipment, in a myriad of locations. It has led me to research and speak with local self-employed electricians as well as well-known national companies such as SSE.</p>
 </div>
 
 <div class="footer">
