@@ -6,18 +6,15 @@
         body {
             margin: 0;
             font-family: 'Lato', sans-serif;
-            color: #333; /* Improved readability */
         }
 
-        /* Navigation bar styles */
         .topnav {
             overflow: hidden;
-            background-color: #4CA772;
-            display: flex;
-            justify-content: center;
+            background-color: #04AA6D;
         }
 
         .topnav a {
+            float: left;
             color: #f2f2f2;
             text-align: center;
             padding: 14px 16px;
@@ -25,21 +22,24 @@
             font-size: 17px;
         }
 
-        .topnav a:hover,
-        .topnav a.active {
+        .topnav a:hover {
             background-color: #00f874;
-            color: black;
+            color: rgba(0, 0, 0, 0);
         }
 
-        /* Overlay menu styles */
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
         .overlay {
-            height: 0;
+            height: 0%;
             width: 100%;
             position: fixed;
             z-index: 1;
             top: 0;
             left: 0;
-            background-color: #00f874;
+            background-color: #00ff80;
             overflow-y: hidden;
             transition: 0.5s;
         }
@@ -55,14 +55,13 @@
         .overlay a {
             padding: 8px;
             text-decoration: none;
-            font-size: 20px; /* Reduced font size for better readability */
-            color: #000000;
+            font-size: 36px;
+            color: #00000000;
             display: block;
             transition: 0.3s;
         }
 
-        .overlay a:hover,
-        .overlay a:focus {
+        .overlay a:hover, .overlay a:focus {
             color: #f1f1f1;
         }
 
@@ -70,38 +69,40 @@
             position: absolute;
             top: 20px;
             right: 45px;
-            font-size: 40px; /* Reduced font size for better appearance */
+            font-size: 60px;
             color: #f1f1f1;
             cursor: pointer;
         }
 
-        /* Footer styles */
+        @media screen and (max-height: 450px) {
+            .overlay {
+                overflow-y: auto;
+            }
+
+            .overlay a {
+                font-size: 20px;
+            }
+
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+
         .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
             background-color: #04AA6D;
             color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        /* Gallery styles */
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        
-        .gallery img {
-            max-width: 100%; /* Ensures images don't exceed their container */
-            margin-bottom: 20px;
-        }
-        
-        /* Paragraph styles */
-        p {
-            margin-bottom: 20px; /* Adds some space below paragraphs for better readability */
         }
     </style>
 </head>
 <body>
+
+<h1 align="center"><b>My Ideal Career</b></h1>
 
 <div class="topnav">
     <a class="active" href="#home">Home</a>
@@ -109,7 +110,7 @@
     <a href="contactme.html">Contact Me</a>
     <a href="MyCollegeCourse.html">My College Course</a>
     <a href="MySkills.html">My Skills</a>
-    <a href="MyWorkExperience.html">Work Experience</a>
+    <a href="MyWorkExperience.html">My Work Experience</a>
     <a href="MyIdealCareer.html">My Ideal Career</a>
     <a href="MyQualifications.html">My Qualifications</a>
     <a href="MyContributionstoSociety.html">My Contributions to Society</a>
@@ -131,37 +132,7 @@
     </div>
 </div>
 
-<!-- Main content -->
-<div>
-    <p>My ideal career would be one in the engineering sector, specifically telecommunications and computer networks. Other engineering roles I have considered pursuing are in the electrical industry.</p>
-    <p>More information can be found on my CV.</p>
-</div>
-
-<div class="gallery">
-    <div>
-        <h1>Mast Rigging</h1>
-        <img src="assets/Images/tower-rigger.jpg" alt="Tower Rigger">
-        <p>Similar to a network engineer, Tower Riggers are contracted by a mobile operating company to install, test, maintain, and replace radio antennas, its cabling, and other equipment, as well as build the mast itself.</p>
-    </div>
-
-    <div>
-        <h2>Telecommunications Engineer</h2>
-        <img src="assets/Images/telecommunicationsEngineer.jpeg" alt="Telecommunications Engineer">
-        <p>You may see these engineers working in street fiber cabinets around the country; the job involves fixing outages/damage and routine maintenance/replacement of equipment.</p>
-    </div>
-
-    <div>
-        <h2>Telecommunications Mast</h2>
-        <img src="assets/Images/telecommunicationMast.jpeg" alt="Telecommunications Mast">
-        <p>A typical example of a mast featuring cellular antenna and equipment such as RRUs (Remote Radio Heads), fiber cabling, and microwave dishes used for network backhaul linking.</p>
-    </div>
-</div>
-
-<div>
-    <h2>Electrician</h2>
-    <img src="assets/Images/Electrician.png" alt="Electrician" style="max-width: 100%; height: auto;">
-    <p>I have also considered a career as an electrician. This hands-on job is similarly themed to the others listed above as it involves installing, replacing, and testing cabling and its equipment, in a myriad of locations. It has led me to research and speak with local self-employed electricians as well as well-known national companies such as SSE.</p>
-</div>
+<div style="padding-left:16px"></div>
 
 <div class="footer">
     <p>Footer</p>
@@ -178,85 +149,160 @@
 </script>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        /* Your existing CSS styles */
+  <title>About Me</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-        /* Modal styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            padding-top: 50px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0,0,0);
-            background-color: rgba(0,0,0,0.9);
-        }
+.topnav {
+  overflow: hidden;
+  background-color: #04AA6D;
+}
 
-        .modal-content {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-        }
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-        .modal-content img {
-            width: 100%;
-            height: auto;
-        }
+.topnav a:hover {
+  background-color: #00f874;
+  color: rgb(0, 0, 0);
+}
 
-        /* Close button */
-        .close {
-            position: absolute;
-            top: 15px;
-            right: 35px;
-            color: #f1f1f1;
-            font-size: 40px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #bbb;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
+.topnav a.active {
+  background-color: #04AA6D;
+  color: rgb(0, 0, 0);
+}
+</style>
 </head>
 <body>
-
-<!-- Your existing HTML content -->
-
-<!-- Modal -->
-<div id="myModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="modalImg">
 </div>
 
-<script>
-    // Your existing JavaScript code
+<div style="padding-left:16px">
+</div>
 
-    // Open modal function
-    function openModal(imgSrc) {
-        var modal = document.getElementById("myModal");
-        var modalImg = document.getElementById("modalImg");
-        modal.style.display = "block";
-        modalImg.src = imgSrc;
+</body>
+</html>
+<style>
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #04AA6D;
+      color: white;
+      
     }
+    </style>
+    
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+    <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
 
-    // Close modal function
-    function closeModal() {
-        document.getElementById("myModal").style.display = "none";
-    }
-</script>
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: (rgb(0, 255, 64));
+  background-color: rgb(0, 255, 8);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+   
+     <p>My ideal career would be one in the engineering sector, specifically telecommunications and computer networks. Other engineering roles I have considered pursuing are in the electrical industry.</p>
+    <p>More information can be found on my CV.</p>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/Images/telecommunicationMast.jpeg">
+      <img src="assets/Images/telecommunicationMast.jpeg" alt="TelecommunicationsMast" width="270" height="270">
+    </a>
+    <div class="desc">This is your typical Telecoms Mast featuring radio antennas for multiple MNOs (Mobile Network Operators) other equiptment seen are the round microwave dishes that connect other sites to create a core network known in the industry as backhaul</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/Images/telecommunicationsEngineer.jpeg">
+      <img src="assets/Images/telecommunicationsEngineer.jpeg" alt="TelecomunicationsEngineer" width="600" height="300">
+    </a>
+    <div class="desc">You may have seen Engineers working either up telecom poles or in streetside broadband cabinets, the job invloves maintaining, upgrading and routine maintanence of ISP (Internet Service Provider) infrastructure.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/Images/tower-rigger.jpg">
+      <img src="assets/Images/tower-rigger.jpg" alt="Tower Rigger" width="600" height="300">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+</div>
 
 </body>
 </html>
