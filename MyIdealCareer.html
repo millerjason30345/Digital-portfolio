@@ -267,35 +267,97 @@ body {
   right: 35px;
   }
 }
-   
-     <p>My ideal career would be one in the engineering sector, specifically telecommunications and computer networks. Other engineering roles I have considered pursuing are in the electrical industry.</p>
-    <p>More information can be found on my CV.</p>
-</div>
+<html>
+<head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Here you can view my dream careers and a breif description of each</h2>
+
+<h4>Resize the browser window to see the effect.</h4>
 
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="assets/Images/telecommunicationMast.jpeg">
-      <img src="assets/Images/telecommunicationMast.jpeg" alt="TelecommunicationsMast" width="270" height="270">
+      <img src="assets/Images/telecommunicationMast.jpeg" alt="Telecommunications Mast" width="600" height="400">
     </a>
-    <div class="desc">This is your typical Telecoms Mast featuring radio antennas for multiple MNOs (Mobile Network Operators) other equiptment seen are the round microwave dishes that connect other sites to create a core network known in the industry as backhaul</div>
+    <div class="desc">This is a typical radio mast featuring equiptment for the MNOs (mobile network operators) such as panel antennas, microwave dishes that send and receive data from other radio sites and RRUs (remote radio head) that amplifies the outgoing radio signals. they come in many forms, this example is a lattice mast</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/Images/tower-rigger.jpg">
+      <img src="assets/Images/tower-rigger.jpg" alt="Tower Rigger" width="600" height="400">
+    </a>
+    <div class="desc">These engineers are contracted by an MNO to install, replace or upgrade antennas, its equptment as well as the antenna frame, as seen in the picture it can be a challenging job as work is conducted at a great height and in many weather forms.</div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="assets/Images/telecommunicationsEngineer.jpeg">
-      <img src="assets/Images/telecommunicationsEngineer.jpeg" alt="TelecomunicationsEngineer" width="600" height="300">
+      <img src="assets/Images/telecommunicationsEngineer.jpeg" alt="Telecommunications Engineer" width="600" height="400">
     </a>
-    <div class="desc">You may have seen Engineers working either up telecom poles or in streetside broadband cabinets, the job invloves maintaining, upgrading and routine maintanence of ISP (Internet Service Provider) infrastructure.</div>
+    <div class="desc">You may see these engineers working up telecom poles or in the green boxes dotted along the street. this role invloves maintanence, installing and upgrading ISP infrastructure such as fibre optic cables, to working in telephone exchanges and data centres.</div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="assets/Images/tower-rigger.jpg">
-      <img src="assets/Images/tower-rigger.jpg" alt="Tower Rigger" width="600" height="300">
+    <a target="_blank" href="assets/Images/electrician.png">
+      <img src="assets/Images/electrician.png" alt="Electrician" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc">Similar to the above, this would invlove working with and designing electrical power systems, its circuits, components and diagnosing and fixing problems </div>
   </div>
 </div>
 
