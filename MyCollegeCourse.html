@@ -1,232 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My College Course</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #04AA6D;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #00f874;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .overlay {
+            height: 0%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color:(rgb(7, 164, 47, 0.818));
+            background-color: rgb(7, 164, 47, 0.818);
+            overflow-y: hidden;
+            transition: 0.5s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #000000;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .overlay a:hover, .overlay a:focus {
+            color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+            color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        @media screen and (max-height: 450px) {
+            .overlay {
+                overflow-y: auto;
+            }
+
+            .overlay a {
+                font-size: 20px;
+            }
+
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #04AA6D;
+            color: white;
+        }
+    </style>
 </head>
-
 <body>
-  <h1 align="center">My College Course</h1>
-</body>
-<!DOCTYPE html>
-<body>
-</body>
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-.topnav {
-  overflow: hidden;
-  background-color: #04AA6D;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #00f874;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-</style>
-</head>
-<body>
+<h1 align="center"><b>My College Course</b></h1>
 
 <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#AboutMe">About Me</a>
-  <a href="#contact">Contact Me</a>
-
+    <a class="active" href="#home">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="contactme.html">Contact Me</a>
+    <a href="MyCollegeCourse.html">My College Course</a>
+    <a href="MySkills.html">My Skills</a>
+    <a href="MyWorkExperience.html">My Work Experience</a>
+    <a href="MyIdealCareer.html">My Ideal Career</a>
+    <a href="MyQualifications.html">My Qualifications</a>
+    <a href="MyContributionstoSociety.html">My Contributions to Society</a>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More</span>
 </div>
-
-<div style="padding-left:16px">
-</div>
-
-</body>
-</html>
-<style>
-    .footer {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: #04AA6D;
-      color: white;
-      
-    }
-    </style>
-    
-    <div class="footer">
-        <p>Footer</p>
-    </div>
-    <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: 'Lato', sans-serif;
-}
-
-.overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: (rgb(7, 164, 47, 0.818));
-  background-color: rgb(7, 164, 47, 0.818);
-  overflow-y: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #000000;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-}
-</style>
-</head>
-<body>
 
 <div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#homepage.html">My Homepage</a>
-    <a href="#MyAwards">About</a>
-    <a href="#MyCollegeCourse">My College Course</a>
-    <a href="#MySkills">My Skills</a>
-    <a href="#MyWorkExperience">My Work Experience</a>
-    <a href="#ContactMe">Contact Me</a>
-    <a href="#MyIdeal Career">My Ideal Career</a>
-    <a href="#MyQualifications">My Qualifications</a>
-    <a href="#MYContributionstoSociety">My Contributions to Society</a>
-
-  </div>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="aboutme.html">About</a>
+        <a href="MyCollegeCourse.html">My College Course</a>
+        <a href="MySkills.html">My Skills</a>
+        <a href="MyWorkExperience.html">My Work Experience</a>
+        <a href="contactme.html">Contact Me</a>
+        <a href="MyIdealCareer.html">My Ideal Career</a>
+        <a href="MyQualifications.html">My Qualifications</a>
+        <a href="MyContributionstoSociety.html">My Contributions to Society</a>
+        <a href="My CV.html">My CV</a>
+    </div>
 </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More</span>
+<div style="padding-left:16px"></div>
+
+<div class="footer">
+    <p>Footer</p>
+</div>
 
 <script>
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
-</script>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-div.scroll-container {
-  background-color: #2bff00;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px;
-}
-
-div.scroll-container img {
-  padding: 10px;
-}
-</style>
-</head>
-<body>
-<p>Use the horizontal scrollbar to see the other images.</p>
-
-<div class="scroll-container">
-  <img src="assets/Images/T LEVEL LOGO copy.jpeg" alt="T Level Logo" width="600" height="200">
-  <img src="assets/Images/Bournemouth and Poole College copy.jpeg" alt="Bournemouth and Poole College Logo" width="600" height="200">
-  <img src="assets/Images/BTEC LOGO copy.jpeg" alt="BTEC LOGO" width="600" height="200">
-</div>
-
-</body>
-</html>
-
-     
-</body>
-</html>
-
-</html>
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title></title>
-  <style>
-    body {
-      font-family: "Arial", sans-serif;
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
     }
-  </style>
-</head>
 
-<html>
-<head>
-<style>
-h1 {text-align: center;}
-p {text-align: center;}
-div {text-align: center;}
-</style>
-</head>
-<body>
-<p>This year i am studying B-TECH ICT to progress on to its T Level equlivallent the following year, so far in one year course, we have compared popular webpages, built and studied computer netwroks and its cabling, namely Ethernet, Creative Design also features and have used Adobe Photoshop and Illustrator to create designs through video tutorials.</p>
-<p>I have chosen to persue T-Levels, specifically Digital Support Services, this two year course, that is equalvalent to 3 A-Levels, looks closely at;</p>
-<ol>
-  <ul>• Network Cables</ul>
-  <ul>• Wireless Technology</ul>
-  <ul>• Servers and its equiptment</ul>
-  <ul>• Building Computer Networks</ul>
-  <ul>• Second year will be dedicated to Cybersecurity</ul>
-  <ul>• Digital Infrastructure</ul>
-  <ul>• Digital Support</ul>
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+</script>
 </body>
 </html>
