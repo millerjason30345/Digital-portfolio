@@ -1,0 +1,19 @@
+<html>
+<style>
+  table{width:60%;}
+  table{border-collapse:collapse;}
+  th, td{border:1px solid;}
+  .col1{width:30%;}
+  .col2{width:70%;}
+</style>
+<h1>table</h1>
+<table>
+    <thead>
+      <tr><th class="col1">1</th><th class="col2">2</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>2</td></tr>
+      <tr><td>1</td><td>2</td></tr>
+    </tbody>
+</table>
+</html>
